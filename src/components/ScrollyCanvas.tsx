@@ -114,7 +114,8 @@ export const ScrollyCanvas = () => {
   return (
     <div
       ref={containerRef}
-      className="relative h-[450vh] sm:h-[550vh] lg:h-[600vh]"
+      className="relative w-full"
+      style={{ height: "min(600vh, calc(100vh * 6))" }}
     >
       <div className="sticky top-0 h-screen w-screen overflow-hidden">
         <canvas
