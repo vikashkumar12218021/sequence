@@ -4,17 +4,17 @@ import { SectionHeading } from "../SectionHeading";
 import { Button } from "@/components/ui/button";
 
 const papers = [
-  { title: "Deep Learning Approaches for Sentiment Classification", year: 2024, abstract: "Exploring transformer-based architectures for fine-grained sentiment analysis on multilingual datasets." },
-  { title: "Hybrid CNN-LSTM Model for Time Series Forecasting", year: 2024, abstract: "A novel hybrid network combining convolutional feature extraction with sequential LSTM modeling." },
-  { title: "Federated Learning in Edge Computing Environments", year: 2023, abstract: "Privacy-preserving distributed learning with low-bandwidth edge devices." },
-  { title: "Explainable AI for Medical Image Diagnosis", year: 2023, abstract: "Grad-CAM and SHAP-driven interpretability frameworks for radiology pipelines." },
-  { title: "Reinforcement Learning for Adaptive Curriculum", year: 2023, abstract: "RL agents that personalize learning trajectories for engineering students." },
-  { title: "GAN-based Data Augmentation for Imbalanced Classes", year: 2023, abstract: "Synthetic minority generation improving classifier robustness on tabular data." },
-  { title: "Optimization of Database Query Plans using ML", year: 2022, abstract: "Learning-based cost estimation for complex SQL queries across distributed engines." },
-  { title: "NLP Techniques for Code Summarization", year: 2022, abstract: "Encoder-decoder models that generate readable summaries from source code." },
-  { title: "IoT Security with Lightweight Cryptography", year: 2022, abstract: "Resource-aware crypto schemes tailored for constrained IoT nodes." },
-  { title: "Cloud-native Microservices Performance Study", year: 2022, abstract: "Empirical evaluation of service mesh patterns under variable load." },
-  { title: "AI Tutoring Systems in Higher Education", year: 2021, abstract: "Conversational tutors that augment classroom instruction at scale." },
+  { title: "Big Data in Cloud Computing", venue: "IEEE ICRITO", abstract: "Analyzing scalability, storage and processing paradigms for big-data workloads on cloud infrastructure." },
+  { title: "Bitcoin Price Prediction using LSTM", venue: "AITA Conference", abstract: "Sequential deep-learning model forecasting cryptocurrency price movements with temporal feature engineering." },
+  { title: "Skin Cancer Detection using CNN/ResNet", venue: "IEEE", abstract: "Deep convolutional architectures classifying dermoscopic images for early melanoma detection." },
+  { title: "Attendance System with Face Recognition", venue: "AITA", abstract: "Real-time facial recognition pipeline automating classroom attendance with high accuracy." },
+  { title: "Fight Detection using Audio + Video AI", venue: "IEEE", abstract: "Multimodal model fusing audio cues and video frames for violent event detection in surveillance." },
+  { title: "Heart Disease Prediction (Hybrid ML)", venue: "AITA", abstract: "Ensemble of classical ML models predicting cardiovascular risk from clinical features." },
+  { title: "Credit Card Fraud Detection", venue: "IEEE", abstract: "Imbalanced-class learning with SMOTE and gradient boosting for transaction fraud identification." },
+  { title: "Flood Prediction using ML", venue: "AITA", abstract: "Geospatial and meteorological feature fusion to forecast flood-prone events." },
+  { title: "Landslide Prediction Model", venue: "IEEE", abstract: "Terrain and rainfall driven ML pipeline estimating landslide susceptibility." },
+  { title: "AI-driven E-learning Platform", venue: "AITA", abstract: "Adaptive learning system personalizing content delivery using AI recommender engines." },
+  { title: "Video Surveillance with Mobile AI", venue: "IEEE", abstract: "On-device inference for real-time anomaly detection in surveillance feeds." },
 ];
 
 export const Research = () => (
@@ -22,8 +22,8 @@ export const Research = () => (
     <div className="container mx-auto px-4">
       <SectionHeading
         eyebrow="Research"
-        title={<>11 <span className="text-gradient">Publications</span></>}
-        description="Peer-reviewed work spanning AI, ML, NLP, systems and applied computing."
+        title={<>11+ <span className="text-gradient">Publications</span></>}
+        description="Peer-reviewed work across IEEE & AITA conferences spanning AI, ML, deep learning and applied systems."
       />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
@@ -43,7 +43,7 @@ export const Research = () => (
                   <FileText className="w-4 h-4 text-primary-foreground" />
                 </div>
                 <span className="text-xs font-mono px-2 py-1 rounded-full bg-primary/10 text-primary">
-                  {p.year}
+                  {p.venue}
                 </span>
               </div>
               <h3 className="font-display font-bold text-base mb-2 leading-tight">

@@ -3,10 +3,10 @@ import { Award, Medal, BookMarked, UserCheck } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const items = [
-  { icon: UserCheck, title: "Placement Coordinator", desc: "Driving 100+ student placements through industry partnerships." },
-  { icon: BookMarked, title: "11 Research Publications", desc: "Peer-reviewed contributions in AI, ML, NLP and systems." },
-  { icon: Award, title: "Academic Excellence", desc: "Consistent merit recognition through B.Tech and M.Tech." },
-  { icon: Medal, title: "Best Mentor Recognition", desc: "Acknowledged by students for impact-driven guidance." },
+  { icon: UserCheck, title: "Placement Coordinator", desc: "Bridging students & recruiters at Lovely Professional University." },
+  { icon: BookMarked, title: "11+ Research Publications", desc: "Peer-reviewed contributions in IEEE & AITA conferences." },
+  { icon: Award, title: "Industry + Academia Hybrid", desc: "5+ years across cloud engineering, monitoring and teaching." },
+  { icon: Medal, title: "Faculty Development Programs", desc: "AI/ML (2024–25) & Full-Stack (React, Node, Django) certified." },
 ];
 
 export const Achievements = () => (
