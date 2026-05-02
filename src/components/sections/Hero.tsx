@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Download, Mail, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Hero3D } from "./Hero3D";
-import { Typewriter } from "./Typewriter";
-import { CountUp } from "./CountUp";
+import { Hero3D } from "../Hero3D";
+import { Typewriter } from "../Typewriter";
+import { CountUp } from "../CountUp";
 
 export const Hero = () => {
   return (
