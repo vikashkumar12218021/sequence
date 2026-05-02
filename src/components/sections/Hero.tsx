@@ -21,7 +21,7 @@ export const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-mono uppercase tracking-widest">
             <Sparkles className="h-3.5 w-3.5 text-primary" />
             <span className="text-muted-foreground">
-              Lakhimpur, Uttar Pradesh · India
+              Lovely Professional University · Lakhimpur, UP, India
             </span>
           </div>
 
@@ -44,19 +44,28 @@ export const Hero = () => {
           </div>
 
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Shaping future engineers with{" "}
-            <span className="text-foreground font-semibold">knowledge</span> &{" "}
-            <span className="text-gradient font-semibold">innovation</span>.
-            Bridging cutting-edge research and classroom impact.
+            Shaping Future Engineers with{" "}
+            <span className="text-foreground font-semibold">AI</span> &{" "}
+            <span className="text-gradient font-semibold">Innovation</span>.
+            Bridging cutting-edge research, cloud engineering and classroom impact.
           </p>
+
+          <div className="flex flex-wrap gap-4 text-xs font-mono text-muted-foreground">
+            <a href="mailto:lalit.verma2713@gmail.com" className="hover:text-primary transition-colors">lalit.verma2713@gmail.com</a>
+            <span className="hidden sm:inline">·</span>
+            <a href="tel:+918707291925" className="hover:text-primary transition-colors">+91 8707291925</a>
+          </div>
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Button
               size="lg"
               className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full glow-primary group"
+              asChild
             >
-              <Download className="mr-2 h-4 w-4 group-hover:translate-y-0.5 transition-transform" />
-              Download CV
+              <a href="/Lalit_Verma_CV.pdf" download>
+                <Download className="mr-2 h-4 w-4 group-hover:translate-y-0.5 transition-transform" />
+                Download CV
+              </a>
             </Button>
             <Button
               size="lg"
@@ -73,9 +82,9 @@ export const Hero = () => {
 
           <div className="grid grid-cols-3 gap-4 pt-8 max-w-md">
             {[
-              { num: 11, suffix: "", label: "Publications" },
-              { num: 4, suffix: "+", label: "Years Exp." },
-              { num: 500, suffix: "+", label: "Students" },
+              { num: 11, suffix: "+", label: "Publications" },
+              { num: 5, suffix: "+", label: "Years Exp." },
+              { num: 4, suffix: "", label: "Languages" },
             ].map((s) => (
               <div key={s.label} className="glass-card p-4 text-center">
                 <div className="text-2xl sm:text-3xl font-display font-bold text-gradient">
