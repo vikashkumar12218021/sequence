@@ -62,7 +62,7 @@ export const ScrollyOverlay = ({ progress }: Props) => {
       {/* 1. HERO INTRO */}
       <motion.div
         style={{ opacity: o0, y: y0 }}
-        className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center px-5 pt-20 sm:pt-16 border-4 border-red-500"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-5 pt-20 sm:pt-16"
       >
         <div className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.3em] sm:tracking-[0.4em] text-primary mb-3 sm:mb-4">
           A Scrollytelling Portfolio
