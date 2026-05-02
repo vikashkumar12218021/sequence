@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { CursorGlow } from "@/components/CursorGlow";
-import { Hero } from "@/components/sections/Hero";
+import { ScrollyCanvas } from "@/components/ScrollyCanvas";
 import { Education } from "@/components/sections/Education";
 import { Experience } from "@/components/sections/Experience";
 import { Skills } from "@/components/sections/Skills";
@@ -41,7 +41,7 @@ const Index = () => {
       <CursorGlow />
       <Navbar />
       <main>
-        <Hero />
+        <ScrollyCanvas />
         <section id="about" className="sr-only">About Lalit Verma — Assistant Professor, AI & ML Researcher</section>
         <Education />
         <Experience />
