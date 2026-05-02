@@ -16,14 +16,20 @@ const chapters = [
   { start: 0.91, end: 1.00 }, // 7 CTA
 ];
 
+const clamp01 = (n: number) => Math.min(1, Math.max(0, n));
+
 const useChapterOpacity = (progress: MotionValue<number>, idx: number) => {
   const { start, end } = chapters[idx];
   const fade = 0.04;
-  return useTransform(
-    progress,
-    [start - fade, start + fade, end - fade, end + fade],
-    [0, 1, 1, 0]
-  );
+  const a = clamp01(start - fade);
+  const b = clamp01(start + fade);
+  const c = clamp01(end - fade);
+  const d = clamp01(end + fade);
+  // Ensure strictly monotonic non-decreasing
+  const b2 = Math.max(b, a);
+  const c2 = Math.max(c, b2);
+  const d2 = Math.max(d, c2);
+  return useTransform(progress, [a, b2, c2, d2], [0, 1, 1, 0]);
 };
 
 const useChapterY = (progress: MotionValue<number>, idx: number) => {
