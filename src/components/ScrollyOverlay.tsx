@@ -21,11 +21,13 @@ const clamp01 = (n: number) => Math.min(1, Math.max(0, n));
 const useChapterOpacity = (progress: MotionValue<number>, idx: number) => {
   const { start, end } = chapters[idx];
   const fade = 0.04;
+  // Build keyframes; if chapter touches an edge, snap fade to that edge
+  // so opacity is already 1 at progress=0 (or stays 1 at progress=1).
   const a = clamp01(start - fade);
-  const b = clamp01(start + fade);
-  const c = clamp01(end - fade);
+  const b = clamp01(start <= 0 ? 0 : start + fade);
+  const c = clamp01(end >= 1 ? 1 : end - fade);
   const d = clamp01(end + fade);
-  // Ensure strictly monotonic non-decreasing
+  // Ensure monotonic non-decreasing
   const b2 = Math.max(b, a);
   const c2 = Math.max(c, b2);
   const d2 = Math.max(d, c2);
