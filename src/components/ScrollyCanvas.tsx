@@ -112,7 +112,10 @@ export const ScrollyCanvas = () => {
   const pct = Math.round((loaded / FRAME_COUNT) * 100);
 
   return (
-    <div ref={containerRef} className="relative" style={{ height: "600vh" }}>
+    <div
+      ref={containerRef}
+      className="relative h-[450vh] sm:h-[550vh] lg:h-[600vh]"
+    >
       <div className="sticky top-0 h-screen w-screen overflow-hidden">
         <canvas
           ref={canvasRef}
