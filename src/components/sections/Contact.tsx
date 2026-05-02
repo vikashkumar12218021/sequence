@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Github, Mail, MapPin, Send } from "lucide-react";
+import { Linkedin, Github, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { SectionHeading } from "../SectionHeading";
 import { Button } from "@/components/ui/button";
@@ -44,16 +44,26 @@ export const Contact = () => {
             <h3 className="font-display text-2xl font-bold relative">Reach out</h3>
             <div className="space-y-4 relative">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl glass flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl glass flex items-center justify-center shrink-0">
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground font-mono uppercase">Email</div>
-                  <div className="text-sm">lalit.verma@example.com</div>
+                  <a href="mailto:lalit.verma2713@gmail.com" className="text-sm hover:text-primary transition-colors">lalit.verma2713@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl glass flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl glass flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <div className="text-xs text-muted-foreground font-mono uppercase">Phone</div>
+                  <a href="tel:+918707291925" className="text-sm hover:text-primary transition-colors block">+91 8707291925</a>
+                  <a href="tel:+918929147374" className="text-sm hover:text-primary transition-colors block">+91 8929147374</a>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl glass flex items-center justify-center shrink-0">
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <div>
@@ -63,10 +73,10 @@ export const Contact = () => {
               </div>
             </div>
             <div className="flex gap-3 mt-auto pt-4 relative">
-              <a href="#" aria-label="LinkedIn" className="w-11 h-11 rounded-xl glass flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all">
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="w-11 h-11 rounded-xl glass flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all">
                 <Linkedin className="w-5 h-5 text-primary" />
               </a>
-              <a href="#" aria-label="GitHub" className="w-11 h-11 rounded-xl glass flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all">
+              <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub" className="w-11 h-11 rounded-xl glass flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all">
                 <Github className="w-5 h-5 text-primary" />
               </a>
             </div>

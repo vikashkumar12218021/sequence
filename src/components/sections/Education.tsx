@@ -1,28 +1,35 @@
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, Brain } from "lucide-react";
+import { GraduationCap, BookOpen, School, Award } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const items = [
   {
     icon: GraduationCap,
-    title: "B.Tech in Computer Science",
-    period: "2019 — 2022",
-    place: "Foundations of CS, programming & systems",
+    title: "M.Tech in Computer Science & Engineering",
+    period: "2022 — 2024",
+    place: "Amity University, Noida · CGPA 8.59",
     color: "from-primary to-primary-glow",
   },
   {
     icon: BookOpen,
-    title: "M.Tech in Computer Science",
-    period: "2022 — 2024",
-    place: "Advanced algorithms, ML & distributed systems",
+    title: "B.Tech in Information Technology",
+    period: "2015 — 2019",
+    place: "IMS Engineering College, Ghaziabad · 75.86%",
     color: "from-secondary to-primary",
   },
   {
-    icon: Brain,
-    title: "PhD in AI & Machine Learning",
-    period: "Ongoing",
-    place: "Research in deep learning & intelligent systems",
+    icon: Award,
+    title: "Intermediate (12th, CBSE)",
+    period: "2014 — 2015",
+    place: "Ajmani International School · 71.8%",
     color: "from-accent to-secondary",
+  },
+  {
+    icon: School,
+    title: "High School (10th, CBSE)",
+    period: "2012 — 2013",
+    place: "Ajmani International School · CGPA 6.8",
+    color: "from-primary to-accent",
   },
 ];
 
