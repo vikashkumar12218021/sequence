@@ -68,13 +68,13 @@ export const ScrollyOverlay = ({ progress }: Props) => {
           A Scrollytelling Portfolio
         </div>
         <h1 className="font-display text-[2.75rem] leading-[0.95] sm:text-6xl md:text-8xl font-black mb-3 sm:mb-4">
-          Lalit <span className="text-gradient">Verma</span>
+          Ankit Kumar <span className="text-gradient">Choudhary</span>
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-foreground/80 max-w-xl px-2">
-          Assistant Professor · AI &amp; ML Researcher
+          Mechanical Engineer · Tool &amp; Die Specialist
         </p>
         <p className="text-[11px] sm:text-xs md:text-sm font-mono text-muted-foreground mt-2">
-          Lovely Professional University
+          Arka Jain University · Jamshedpur
         </p>
         <div className="absolute bottom-6 sm:bottom-10 flex flex-col items-center gap-2">
           <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
@@ -91,9 +91,9 @@ export const ScrollyOverlay = ({ progress }: Props) => {
       >
         <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-primary mb-5 sm:mb-6 animate-pulse" />
         <h2 className="font-display text-[2rem] sm:text-4xl md:text-7xl font-bold leading-[1.1] max-w-4xl">
-          Shaping <span className="text-gradient">Future Engineers</span>
+          Crafting <span className="text-gradient">Precision Tools</span>
           <br className="hidden sm:block" />
-          <span className="sm:hidden"> </span>with AI &amp; Innovation
+          <span className="sm:hidden"> </span>with CAD &amp; Craftsmanship
         </h2>
       </motion.div>
 
@@ -110,9 +110,9 @@ export const ScrollyOverlay = ({ progress }: Props) => {
         </div>
         <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-2 max-w-5xl w-full">
           {[
-            { t: "B.Tech", s: "Computer Science" },
-            { t: "M.Tech", s: "Amity University" },
-            { t: "PhD", s: "Ongoing Research" },
+            { t: "10th", s: "Xavier's English HS" },
+            { t: "Diploma", s: "Tool & Die · CTTC" },
+            { t: "B.Tech", s: "Mechanical · Arka Jain" },
           ].map((it, i) => (
             <div
               key={it.t}
@@ -147,10 +147,10 @@ export const ScrollyOverlay = ({ progress }: Props) => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 max-w-3xl w-full">
           {[
-            { r: "Assistant Professor", o: "Lovely Professional University" },
-            { r: "Network Administrator", o: "Opstree Solutions" },
-            { r: "AWS Engineer", o: "Umbrella Infocare" },
-            { r: "Cloud / NOC", o: "Progressive Infotech" },
+            { r: "Diploma Trainee", o: "Mahindra & Mahindra · Tool & Die" },
+            { r: "InPlant Trainee — NPD", o: "Kiswok Industries" },
+            { r: "Engine Plant Intern", o: "Tata Motors · DGM" },
+            { r: "CNC Workshop Intern", o: "IDTR" },
           ].map((x) => (
             <div key={x.r} className="glass-card p-3.5 sm:p-4">
               <div className="font-display font-bold text-sm sm:text-base">
@@ -176,7 +176,7 @@ export const ScrollyOverlay = ({ progress }: Props) => {
           </span>
         </div>
         <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 md:gap-3 max-w-3xl">
-          {["React", "PHP", "Laravel", "Django", "Python", "AI / ML", "AWS", "GCP", "Docker", "Kubernetes"].map(
+          {["AutoCAD", "SolidWorks", "CATIA V5/V6", "CNC Wire EDM", "Press Tools", "Mold Design", "Jigs & Fixtures", "Lathe", "Milling", "Grinding"].map(
             (s, i) => (
               <motion.span
                 key={s}
@@ -199,13 +199,13 @@ export const ScrollyOverlay = ({ progress }: Props) => {
       >
         <FlaskConical className="w-7 h-7 sm:w-8 sm:h-8 text-primary mb-3 sm:mb-4 animate-pulse" />
         <div className="font-display text-[5rem] sm:text-7xl md:text-9xl font-black text-gradient leading-none">
-          11+
+          2+
         </div>
         <div className="font-mono text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.25em] sm:tracking-[0.3em] text-muted-foreground mt-2 mb-5 sm:mb-6">
-          Research Publications
+          Years of Industry Training
         </div>
         <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 max-w-2xl">
-          {["AI E-learning", "Bitcoin Prediction", "Skin Cancer Detection", "Fight Detection", "Flood Prediction"].map(
+          {["Mahindra & Mahindra", "Tata Motors", "Kiswok Industries", "IDTR", "Coursera"].map(
             (t) => (
               <span
                 key={t}

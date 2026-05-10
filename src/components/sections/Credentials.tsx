@@ -3,22 +3,23 @@ import { BadgeCheck, Sparkles, Globe } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const certifications = [
-  "Android with Core Java — Netcamp",
-  "Web Development — Netcamp",
-  "Networking — Netcamp",
-  "Java — NASSCOM",
+  "CNC Engineering Workshop — IDTR (Production)",
+  "Engine Plant Assembly Line — Tata Motors",
+  "Heavy Manufacturing Specialization — Coursera",
+  "TPM Management Development Programme — IDTR",
 ];
 
-const fdps = [
-  "AI & ML Certification (2024 — 2025)",
-  "Full-Stack Development — React, Node, Django",
+const strengths = [
+  "Time management & dedication",
+  "Strong written & oral communication",
+  "Self-motivated, fast learner",
+  "Energetic & able to work independently",
 ];
 
 const languages = [
   { name: "English", level: "Fluent" },
   { name: "Hindi", level: "Native" },
-  { name: "French", level: "Basic" },
-  { name: "Japanese", level: "Basic" },
+  { name: "Bengali", level: "Conversational" },
 ];
 
 const Card = ({
@@ -63,13 +64,13 @@ export const Credentials = () => (
     <div className="container mx-auto px-4">
       <SectionHeading
         eyebrow="Credentials"
-        title={<>Certifications, FDPs & <span className="text-gradient">Languages</span></>}
-        description="Continuous learning across technologies and cultures."
+        title={<>Certifications, Strengths & <span className="text-gradient">Languages</span></>}
+        description="Continuous learning across machines, processes and communication."
       />
 
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <Card icon={BadgeCheck} title="Certifications" items={certifications} delay={0} />
-        <Card icon={Sparkles} title="Faculty Development" items={fdps} delay={0.1} />
+        <Card icon={BadgeCheck} title="Certifications & Training" items={certifications} delay={0} />
+        <Card icon={Sparkles} title="Core Strengths" items={strengths} delay={0.1} />
         <Card
           icon={Globe}
           title="Languages"

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Award, Medal, BookMarked, UserCheck } from "lucide-react";
+import { Award, Medal, Factory, GraduationCap } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const items = [
-  { icon: UserCheck, title: "Placement Coordinator", desc: "Bridging students & recruiters at Lovely Professional University." },
-  { icon: BookMarked, title: "11+ Research Publications", desc: "Peer-reviewed contributions in IEEE & AITA conferences." },
-  { icon: Award, title: "Industry + Academia Hybrid", desc: "5+ years across cloud engineering, monitoring and teaching." },
-  { icon: Medal, title: "Faculty Development Programs", desc: "AI/ML (2024–25) & Full-Stack (React, Node, Django) certified." },
+  { icon: Factory, title: "Tata Motors Internship", desc: "6-week summer internship at the DGM Engine Plant — Assembly Line." },
+  { icon: GraduationCap, title: "IDTR CNC Workshop", desc: "4-week internship in CNC Engineering Workshop (Production)." },
+  { icon: Award, title: "Heavy Manufacturing Specialization", desc: "Coursera specialization on heavy manufacturing processes." },
+  { icon: Medal, title: "TPM Management Programme", desc: "Management Development Programme on Total Productive Maintenance — IDTR." },
 ];
 
 export const Achievements = () => (

@@ -21,39 +21,39 @@ export const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-mono uppercase tracking-widest">
             <Sparkles className="h-3.5 w-3.5 text-primary" />
             <span className="text-muted-foreground">
-              Lovely Professional University · Lakhimpur, UP, India
+              Arka Jain University · Jamshedpur, Jharkhand
             </span>
           </div>
 
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05]">
             <span className="block text-foreground">Hi, I'm</span>
             <span className="block text-gradient animate-gradient bg-gradient-hero">
-              Lalit Verma
+              Ankit Kumar Choudhary
             </span>
           </h1>
 
           <div className="text-lg sm:text-xl text-muted-foreground font-mono h-7">
             <Typewriter
               words={[
-                "Assistant Professor",
-                "AI & ML Researcher",
-                "Placement Coordinator",
-                "Educator & Mentor",
+                "Mechanical Engineer",
+                "Tool & Die Maker",
+                "CAD / CAM Designer",
+                "Press Tool Specialist",
               ]}
             />
           </div>
 
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Shaping Future Engineers with{" "}
-            <span className="text-foreground font-semibold">AI</span> &{" "}
-            <span className="text-gradient font-semibold">Innovation</span>.
-            Bridging cutting-edge research, cloud engineering and classroom impact.
+            Designing and building precision{" "}
+            <span className="text-foreground font-semibold">Press Tools</span>,{" "}
+            <span className="text-gradient font-semibold">Dies & Fixtures</span>.
+            Bridging hands-on shop-floor experience with modern CAD/CAM workflows.
           </p>
 
           <div className="flex flex-wrap gap-4 text-xs font-mono text-muted-foreground">
-            <a href="mailto:lalit.verma2713@gmail.com" className="hover:text-primary transition-colors">lalit.verma2713@gmail.com</a>
+            <a href="mailto:ankitchoudhary2305@gmail.com" className="hover:text-primary transition-colors">ankitchoudhary2305@gmail.com</a>
             <span className="hidden sm:inline">·</span>
-            <a href="tel:+918707291925" className="hover:text-primary transition-colors">+91 8707291925</a>
+            <a href="tel:+918789319609" className="hover:text-primary transition-colors">+91 8789319609</a>
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2">
@@ -62,7 +62,7 @@ export const Hero = () => {
               className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full glow-primary group"
               asChild
             >
-              <a href="/Lalit_Verma_CV.pdf" download>
+              <a href="/Ankit_Choudhary_CV.pdf" download>
                 <Download className="mr-2 h-4 w-4 group-hover:translate-y-0.5 transition-transform" />
                 Download CV
               </a>
@@ -82,9 +82,9 @@ export const Hero = () => {
 
           <div className="grid grid-cols-3 gap-4 pt-8 max-w-md">
             {[
-              { num: 11, suffix: "+", label: "Publications" },
-              { num: 5, suffix: "+", label: "Years Exp." },
-              { num: 4, suffix: "", label: "Languages" },
+              { num: 7.98, suffix: "", label: "B.Tech CGPA" },
+              { num: 2, suffix: "+", label: "Years Industry" },
+              { num: 5, suffix: "", label: "CAD Tools" },
             ].map((s) => (
               <div key={s.label} className="glass-card p-4 text-center">
                 <div className="text-2xl sm:text-3xl font-display font-bold text-gradient">
@@ -110,7 +110,7 @@ export const Hero = () => {
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
           >
-            <span className="text-primary">{"{"}</span> AI · ML{" "}
+            <span className="text-primary">{"{"}</span> CAD · CAM{" "}
             <span className="text-primary">{"}"}</span>
           </motion.div>
           <motion.div
@@ -118,7 +118,7 @@ export const Hero = () => {
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
           >
-            <span className="text-secondary">PhD</span> · ongoing
+            <span className="text-secondary">Tool & Die</span> · specialist
           </motion.div>
         </motion.div>
       </div>
