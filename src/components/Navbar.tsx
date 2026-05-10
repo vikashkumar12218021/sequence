@@ -9,8 +9,8 @@ const links = [
   { href: "#education", label: "Education" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
-  { href: "#research", label: "Research" },
   { href: "#projects", label: "Projects" },
+  { href: "#achievements", label: "Achievements" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -49,10 +49,10 @@ export const Navbar = () => {
         >
           <a href="#home" className="flex items-center gap-2 group">
             <div className="w-9 h-9 rounded-xl bg-gradient-primary flex items-center justify-center font-display font-bold text-primary-foreground glow-primary">
-              LV
+              AC
             </div>
             <span className="font-display font-bold text-lg hidden sm:inline">
-              Lalit<span className="text-gradient">.</span>
+              Ankit<span className="text-gradient">.</span>
             </span>
           </a>
 

@@ -1,51 +1,30 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Server, Cloud, Network } from "lucide-react";
+import { Cog, Factory } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const items = [
   {
-    icon: GraduationCap,
-    title: "Assistant Professor",
-    org: "Lovely Professional University (CS&E), Jalandhar",
-    sub: "July 2024 — Present",
+    icon: Cog,
+    title: "Diploma Trainee Engineer — Tool Room",
+    org: "Mahindra & Mahindra Ltd · Tool & Die Plant 2",
+    sub: "Oct 2021 — Oct 2022",
     points: [
-      "Teaching PHP (Server-Side Scripting) & Laravel (MVC)",
-      "Upcoming: Django (Python) — PHP → Laravel → Django path",
-      "Mentoring students, projects & research guidance",
+      "Assembly of press tools: draw, forming, blank & pierce, trim and progressive dies",
+      "Quality checking and inspection of die parts and sheet-metal components",
+      "Static & dynamic checking of sheet-metal components and dies",
+      "Inspection of sub-contracted die parts, trim-line passing and CAM alignment",
+      "Trim clearance verification and safe shop-floor practices",
     ],
   },
   {
-    icon: Network,
-    title: "Network Administrator",
-    org: "Opstree Solutions Pvt. Ltd., Noida",
-    sub: "July 2022 — Jan 2024",
+    icon: Factory,
+    title: "InPlant Trainee — New Product Development",
+    org: "Kiswok Industries Pvt. Ltd.",
+    sub: "Jan 2020 — Sep 2020",
     points: [
-      "Monitoring with Zabbix, Kubernetes, GCP, Grafana, Prometheus",
-      "Transaction systems: Rummy Circle, Razorpay",
-      "Jenkins pipelines, cron jobs, memory & PID debugging",
-      "Projects: Games 24x7, Miko, EZ Mall",
-    ],
-  },
-  {
-    icon: Cloud,
-    title: "AWS Engineer",
-    org: "Umbrella Infocare Pvt. Ltd., Noida",
-    sub: "July 2021 — July 2022",
-    points: [
-      "AWS monitoring — EC2, RDS, ELB",
-      "RCA, server diagnostics & Docker setup",
-      "Clients: Herocorp, Clovia, Dabur, Sketchers",
-    ],
-  },
-  {
-    icon: Server,
-    title: "Cloud Engineer & NOC Specialist",
-    org: "Progressive Infotech Pvt. Ltd., Noida",
-    sub: "June 2019 — Aug 2020",
-    points: [
-      "24x7 NOC monitoring & incident response",
-      "Cloud infrastructure operations",
-      "Linux administration & ticket resolution",
+      "Worked with the NPD team on casting product development",
+      "Hands-on exposure to design and manufacturing of casting materials",
+      "Process documentation and inspection support for new components",
     ],
   },
 ];
@@ -55,8 +34,8 @@ export const Experience = () => (
     <div className="container mx-auto px-4">
       <SectionHeading
         eyebrow="Experience"
-        title={<>Where <span className="text-gradient">Industry</span> meets <span className="text-gradient">Academia</span></>}
-        description="A unique blend of cloud engineering, monitoring, and educational impact."
+        title={<>Where <span className="text-gradient">Industry</span> meets <span className="text-gradient">Craft</span></>}
+        description="Real shop-floor experience across press-tool assembly and new product development."
       />
 
       <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">

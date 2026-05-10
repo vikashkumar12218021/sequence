@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "../SectionHeading";
 
 const skillGroups = [
-  { title: "Programming", items: ["C", "C++", "Java"] },
-  { title: "Web", items: ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "Django"] },
-  { title: "Core CS", items: ["DBMS", "Data Structures", "Operating Systems"] },
-  { title: "AI / ML", items: ["Machine Learning", "Artificial Intelligence", "Deep Learning"] },
-  { title: "Cloud & Networking", items: ["AWS", "GCP", "Networking", "Linux"] },
-  { title: "Other", items: ["Software Testing", "Android"] },
+  { title: "CAD / CAM Software", items: ["AutoCAD (Mechanical)", "SolidWorks", "CATIA V5/V6"] },
+  { title: "Manufacturing", items: ["Press Tool", "Mold Design", "Jigs & Fixtures", "Die Assembly"] },
+  { title: "Conventional Machines", items: ["Lathe", "Milling", "Shaper", "Grinding", "Drilling"] },
+  { title: "CNC & Advanced", items: ["CNC Wire EDM", "CNC Production", "Sheet-Metal Inspection"] },
+  { title: "Quality & Process", items: ["Static & Dynamic Checking", "Trim-Line Passing", "CAM Alignment", "TPM"] },
+  { title: "Productivity", items: ["MS Office", "Documentation", "Shop-Floor Reporting"] },
 ];
 
 const tools = [
-  "AWS", "GCP", "Jenkins", "Dynatrace", "Grafana",
-  "Prometheus", "Zabbix", "Nagios XI", "Kubernetes", "Docker",
-  "ServiceNow", "Freshservice", "Zoho People",
+  "AutoCAD", "SolidWorks", "CATIA V5", "CATIA V6", "CNC Wire EDM",
+  "Lathe", "Milling", "Shaper", "Grinding", "Drilling",
+  "Press Tools", "Progressive Die", "MS Office",
 ];
 
 export const Skills = () => (
@@ -21,8 +21,8 @@ export const Skills = () => (
     <div className="container mx-auto px-4">
       <SectionHeading
         eyebrow="Skills & Stack"
-        title={<>Technical <span className="text-gradient">Arsenal</span></>}
-        description="Languages, frameworks and platforms I teach, build with, and operate at scale."
+        title={<>Technical <span className="text-gradient">Toolkit</span></>}
+        description="Software, machines and processes I design with and operate on the shop floor."
       />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
@@ -54,7 +54,7 @@ export const Skills = () => (
 
       <div className="mt-16 max-w-6xl mx-auto">
         <h3 className="font-display text-2xl font-bold text-center mb-8">
-          DevOps & <span className="text-gradient">Tools</span>
+          Machines & <span className="text-gradient">Tools</span>
         </h3>
         <div className="flex flex-wrap justify-center gap-3">
           {tools.map((t, i) => (

@@ -3,10 +3,10 @@ import { Quote } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const testimonials = [
-  { name: "Ananya Sharma", role: "B.Tech CSE, Final Year", text: "Sir's mentoring transformed my approach to problem solving. He doesn't just teach — he ignites curiosity." },
-  { name: "Rahul Yadav", role: "M.Tech Graduate · Placed at MNC", text: "From research guidance to placement prep, his support was unwavering. A true mentor in every sense." },
-  { name: "Priya Singh", role: "Research Scholar", text: "Collaborating with him on ML research opened my eyes to how deep theoretical foundations meet real impact." },
-  { name: "Aman Verma", role: "B.Tech CSE, 3rd Year", text: "His OS and DBMS classes are legendary — clear, intuitive and packed with real-world examples." },
+  { name: "Shop Floor Lead", role: "Mahindra & Mahindra · Tool Room", text: "Ankit consistently showed strong attention to detail during press-tool assembly and was reliable on quality checks." },
+  { name: "NPD Engineer", role: "Kiswok Industries", text: "A quick learner who picked up casting fundamentals fast and contributed meaningfully during his InPlant training." },
+  { name: "Faculty", role: "Arka Jain University", text: "Disciplined and curious — Ankit balances theory with practical tool-room experience exceptionally well." },
+  { name: "Peer", role: "B.Tech Mechanical", text: "Always the go-to person for CAD doubts — great with SolidWorks and CATIA workflows." },
 ];
 
 export const Testimonials = () => (
@@ -14,8 +14,8 @@ export const Testimonials = () => (
     <div className="container mx-auto px-4">
       <SectionHeading
         eyebrow="Testimonials"
-        title={<>Voices of <span className="text-gradient">Students</span></>}
-        description="What students and mentees have to say about the journey."
+        title={<>What People <span className="text-gradient">Say</span></>}
+        description="Feedback from mentors, peers and shop-floor leads."
       />
       <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {testimonials.map((t, i) => (

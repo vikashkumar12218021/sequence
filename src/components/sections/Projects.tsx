@@ -1,34 +1,34 @@
 import { motion } from "framer-motion";
-import { Smartphone, TrendingUp, ScanFace, BookOpen } from "lucide-react";
+import { Hammer, Layers, Boxes, Wrench } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const projects = [
   {
-    icon: Smartphone,
-    name: "Video Surveillance System",
-    tag: "Android · Java",
-    desc: "Mobile-based video surveillance with real-time streaming and motion-trigger alerts.",
+    icon: Hammer,
+    name: "Progressive Press Tool Assembly",
+    tag: "Mahindra · Plant 2",
+    desc: "Hands-on assembly and alignment of progressive dies for sheet-metal panels with trim-line and clearance checks.",
     color: "from-primary to-primary-glow",
   },
   {
-    icon: TrendingUp,
-    name: "Bitcoin Prediction Model",
-    tag: "Python · LSTM",
-    desc: "Deep-learning sequential model forecasting Bitcoin price using historical OHLCV data.",
+    icon: Layers,
+    name: "Draw & Forming Die Inspection",
+    tag: "Tool & Die Shop",
+    desc: "Static and dynamic inspection of draw / forming dies and sub-contracted die parts before production release.",
     color: "from-secondary to-primary",
   },
   {
-    icon: ScanFace,
-    name: "Facial Recognition Attendance",
-    tag: "OpenCV · ML",
-    desc: "Automated attendance pipeline using face detection & recognition for classrooms.",
+    icon: Boxes,
+    name: "Casting Component Development",
+    tag: "Kiswok · NPD",
+    desc: "Supported the New Product Development team in developing and validating new casting components.",
     color: "from-accent to-secondary",
   },
   {
-    icon: BookOpen,
-    name: "AI E-learning Platform",
-    tag: "Django · AI",
-    desc: "Adaptive learning system that personalizes content delivery using AI recommendations.",
+    icon: Wrench,
+    name: "CAD Design — Jigs & Fixtures",
+    tag: "AutoCAD · SolidWorks · CATIA",
+    desc: "Modeled and detailed press tools, molds, jigs and fixtures using industry-standard CAD packages.",
     color: "from-primary to-accent",
   },
 ];
@@ -39,7 +39,7 @@ export const Projects = () => (
       <SectionHeading
         eyebrow="Projects"
         title={<>Selected <span className="text-gradient">Work</span></>}
-        description="Applied projects spanning mobile, AI, computer vision and adaptive learning."
+        description="Industry projects spanning press-tool assembly, inspection, casting NPD and CAD design."
       />
 
       <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
