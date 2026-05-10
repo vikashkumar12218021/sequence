@@ -1,33 +1,27 @@
 import { motion } from "framer-motion";
-import { ExternalLink, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
-import { Button } from "@/components/ui/button";
 
-const papers = [
-  { title: "Big Data in Cloud Computing", venue: "IEEE ICRITO", abstract: "Analyzing scalability, storage and processing paradigms for big-data workloads on cloud infrastructure." },
-  { title: "Bitcoin Price Prediction using LSTM", venue: "AITA Conference", abstract: "Sequential deep-learning model forecasting cryptocurrency price movements with temporal feature engineering." },
-  { title: "Skin Cancer Detection using CNN/ResNet", venue: "IEEE", abstract: "Deep convolutional architectures classifying dermoscopic images for early melanoma detection." },
-  { title: "Attendance System with Face Recognition", venue: "AITA", abstract: "Real-time facial recognition pipeline automating classroom attendance with high accuracy." },
-  { title: "Fight Detection using Audio + Video AI", venue: "IEEE", abstract: "Multimodal model fusing audio cues and video frames for violent event detection in surveillance." },
-  { title: "Heart Disease Prediction (Hybrid ML)", venue: "AITA", abstract: "Ensemble of classical ML models predicting cardiovascular risk from clinical features." },
-  { title: "Credit Card Fraud Detection", venue: "IEEE", abstract: "Imbalanced-class learning with SMOTE and gradient boosting for transaction fraud identification." },
-  { title: "Flood Prediction using ML", venue: "AITA", abstract: "Geospatial and meteorological feature fusion to forecast flood-prone events." },
-  { title: "Landslide Prediction Model", venue: "IEEE", abstract: "Terrain and rainfall driven ML pipeline estimating landslide susceptibility." },
-  { title: "AI-driven E-learning Platform", venue: "AITA", abstract: "Adaptive learning system personalizing content delivery using AI recommender engines." },
-  { title: "Video Surveillance with Mobile AI", venue: "IEEE", abstract: "On-device inference for real-time anomaly detection in surveillance feeds." },
+const trainings = [
+  { title: "Mahindra & Mahindra — Tool & Die Plant 2", venue: "Diploma Trainee", abstract: "12 months in the DIE Shop Assembly Department, working on draw, forming, blank, pierce, trim and progressive dies." },
+  { title: "Tata Motors — DGM Engine Plant", venue: "Internship", abstract: "6-week summer internship on the engine assembly line during 7th semester of B.Tech." },
+  { title: "IDTR — CNC Engineering Workshop", venue: "Internship", abstract: "4-week summer internship in 4th semester focused on CNC production processes." },
+  { title: "Kiswok Industries — NPD", venue: "InPlant Training", abstract: "9 months supporting the New Product Development team on casting product design and validation." },
+  { title: "Heavy Manufacturing Specialization", venue: "Coursera", abstract: "Specialization covering large-scale manufacturing systems, processes and quality." },
+  { title: "TPM Management Development Programme", venue: "IDTR", abstract: "Programme on Total Productive Maintenance principles and shop-floor implementation." },
 ];
 
 export const Research = () => (
-  <section id="research" className="relative py-24">
+  <section id="trainings" className="relative py-24">
     <div className="container mx-auto px-4">
       <SectionHeading
-        eyebrow="Research"
-        title={<>11+ <span className="text-gradient">Publications</span></>}
-        description="Peer-reviewed work across IEEE & AITA conferences spanning AI, ML, deep learning and applied systems."
+        eyebrow="Trainings & Internships"
+        title={<>Industry <span className="text-gradient">Exposure</span></>}
+        description="Internships, on-the-job trainings and professional programmes across leading manufacturing setups."
       />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
-        {papers.map((p, i) => (
+        {trainings.map((p, i) => (
           <motion.article
             key={p.title}
             initial={{ opacity: 0, y: 24 }}
@@ -49,16 +43,9 @@ export const Research = () => (
               <h3 className="font-display font-bold text-base mb-2 leading-tight">
                 {p.title}
               </h3>
-              <p className="text-sm text-muted-foreground flex-1 mb-4">
+              <p className="text-sm text-muted-foreground flex-1">
                 {p.abstract}
               </p>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="self-start text-primary hover:text-primary hover:bg-primary/10 -ml-3"
-              >
-                View Paper <ExternalLink className="ml-2 h-3 w-3" />
-              </Button>
             </div>
           </motion.article>
         ))}
