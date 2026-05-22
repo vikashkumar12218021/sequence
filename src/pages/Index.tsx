@@ -16,8 +16,8 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Ankit Kumar Choudhary — Mechanical Engineer · Tool & Die Specialist";
-    const desc = "Portfolio of Ankit Kumar Choudhary — B.Tech Mechanical Engineering student and Tool & Die specialist with experience at Mahindra & Mahindra, Tata Motors and Kiswok Industries.";
+    document.title = "Vikash Kumar — AI Developer · Web & App Developer";
+    const desc = "Portfolio of Vikash Kumar — AI Developer, Full-Stack Web & App Developer, and Digital Content Creator. B.Tech CSE at Lovely Professional University.";
     let m = document.querySelector('meta[name="description"]');
     if (!m) {
       m = document.createElement("meta");
@@ -42,7 +42,7 @@ const Index = () => {
       <Navbar />
       <main>
         <ScrollyCanvas />
-        <section id="about" className="sr-only">About Ankit Kumar Choudhary — Mechanical Engineer & Tool & Die Specialist</section>
+        <section id="about" className="sr-only">About Vikash Kumar — AI Developer, Web & App Developer, Digital Content Creator</section>
         <Education />
         <Experience />
         <Skills />

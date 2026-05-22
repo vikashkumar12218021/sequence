@@ -3,21 +3,21 @@ import { FileText } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const trainings = [
-  { title: "Mahindra & Mahindra — Tool & Die Plant 2", venue: "Diploma Trainee", abstract: "12 months in the DIE Shop Assembly Department, working on draw, forming, blank, pierce, trim and progressive dies." },
-  { title: "Tata Motors — DGM Engine Plant", venue: "Internship", abstract: "6-week summer internship on the engine assembly line during 7th semester of B.Tech." },
-  { title: "IDTR — CNC Engineering Workshop", venue: "Internship", abstract: "4-week summer internship in 4th semester focused on CNC production processes." },
-  { title: "Kiswok Industries — NPD", venue: "InPlant Training", abstract: "9 months supporting the New Product Development team on casting product design and validation." },
-  { title: "Heavy Manufacturing Specialization", venue: "Coursera", abstract: "Specialization covering large-scale manufacturing systems, processes and quality." },
-  { title: "TPM Management Development Programme", venue: "IDTR", abstract: "Programme on Total Productive Maintenance principles and shop-floor implementation." },
+  { title: "Web Development Intern — Tata Steel", venue: "Internship", abstract: "Built a static QR Code Generator website with download support for contact and business QR codes (Jun–Aug 2024)." },
+  { title: "Programming Fundamentals in Kotlin", venue: "Meta", abstract: "Foundational Kotlin programming course on Coursera by Meta (Nov 2024)." },
+  { title: "Introduction to Android App Development", venue: "Meta", abstract: "Android app development essentials covered through Meta's official program (Oct 2024)." },
+  { title: "Programming in C++", venue: "Codio", abstract: "Hands-on C++ programming certification focusing on OOP and STL (Nov 2023)." },
+  { title: "Programming in Java", venue: "NPTEL", abstract: "NPTEL-certified Java programming course covering core language and OOP principles (Oct 2023)." },
+  { title: "WebVista Agency — Freelance", venue: "Self-led", abstract: "Ongoing freelance practice in full-stack web dev, SEO and AI-driven customer behaviour insights." },
 ];
 
 export const Research = () => (
   <section id="trainings" className="relative py-24">
     <div className="container mx-auto px-4">
       <SectionHeading
-        eyebrow="Trainings & Internships"
-        title={<>Industry <span className="text-gradient">Exposure</span></>}
-        description="Internships, on-the-job trainings and professional programmes across leading manufacturing setups."
+        eyebrow="Trainings & Certifications"
+        title={<>Continuous <span className="text-gradient">Learning</span></>}
+        description="Internships and certifications across AI, mobile, web and core programming."
       />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">

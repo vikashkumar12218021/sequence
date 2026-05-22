@@ -1,28 +1,21 @@
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, School } from "lucide-react";
+import { GraduationCap, School } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const items = [
   {
     icon: GraduationCap,
-    title: "B.Tech in Mechanical Engineering",
-    period: "Pursuing · 8th Semester",
-    place: "Arka Jain University, Jamshedpur · CGPA 7.98",
+    title: "B.Tech in Computer Science & Engineering",
+    period: "2022 — 2026",
+    place: "Lovely Professional University, Punjab · CGPA 7.15",
     color: "from-primary to-primary-glow",
   },
   {
-    icon: BookOpen,
-    title: "Diploma in Tool & Die Making (4 Years)",
-    period: "2016 — 2020",
-    place: "Central Tool Room and Training Centre (CTTC), Kolkata · 68.93%",
-    color: "from-secondary to-primary",
-  },
-  {
     icon: School,
-    title: "Matriculation (10th, CBSE)",
-    period: "2016",
-    place: "Xavier's English High School · CGPA 7.2",
-    color: "from-accent to-secondary",
+    title: "Higher Secondary & Schooling",
+    period: "Pre-2022",
+    place: "Foundation in Science, Mathematics & Computing",
+    color: "from-secondary to-primary",
   },
 ];
 
@@ -32,7 +25,7 @@ export const Education = () => (
       <SectionHeading
         eyebrow="Education"
         title={<>Academic <span className="text-gradient">Journey</span></>}
-        description="From hands-on tool-room training to a B.Tech in Mechanical Engineering."
+        description="From foundational schooling to a B.Tech in Computer Science at LPU."
       />
 
       <div className="relative max-w-4xl mx-auto">

@@ -1,35 +1,42 @@
 import { motion } from "framer-motion";
-import { Hammer, Layers, Boxes, Wrench } from "lucide-react";
+import { Bot, ShoppingCart, Hotel, BarChart3, Globe } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const projects = [
   {
-    icon: Hammer,
-    name: "Progressive Press Tool Assembly",
-    tag: "Mahindra · Plant 2",
-    desc: "Hands-on assembly and alignment of progressive dies for sheet-metal panels with trim-line and clearance checks.",
+    icon: Bot,
+    name: "SmartRMS — AI Request Automation",
+    tag: "LPU · May 2025 – Present",
+    desc: "AI chatbots & assistants modernizing request management with intent recognition and automated routing to departments.",
     color: "from-primary to-primary-glow",
   },
   {
-    icon: Layers,
-    name: "Draw & Forming Die Inspection",
-    tag: "Tool & Die Shop",
-    desc: "Static and dynamic inspection of draw / forming dies and sub-contracted die parts before production release.",
+    icon: ShoppingCart,
+    name: "Grosari-Wala — Grocery Platform",
+    tag: "React · Node · MongoDB · Stripe",
+    desc: "AI-enhanced grocery store with personalized recommendations, cart management, Stripe payments and secure auth.",
     color: "from-secondary to-primary",
   },
   {
-    icon: Boxes,
-    name: "Casting Component Development",
-    tag: "Kiswok · NPD",
-    desc: "Supported the New Product Development team in developing and validating new casting components.",
+    icon: Hotel,
+    name: "HotelWilla — Django Booking App",
+    tag: "Python · Django · MySQL",
+    desc: "AI-powered hotel booking with personalized room suggestions and Django Forms for contact inquiries.",
     color: "from-accent to-secondary",
   },
   {
-    icon: Wrench,
-    name: "CAD Design — Jigs & Fixtures",
-    tag: "AutoCAD · SolidWorks · CATIA",
-    desc: "Modeled and detailed press tools, molds, jigs and fixtures using industry-standard CAD packages.",
+    icon: BarChart3,
+    name: "SocialBoost — Marketing Platform",
+    tag: "React · Node · AI Analytics",
+    desc: "Automated social campaign scheduling with AI insights on optimal posting times and engagement dashboards.",
     color: "from-primary to-accent",
+  },
+  {
+    icon: Globe,
+    name: "WebVista Agency",
+    tag: "Freelance · Full-Stack",
+    desc: "Full-stack web dev for small businesses — responsive UX, SEO, AI behaviour insights and social integrations.",
+    color: "from-secondary to-accent",
   },
 ];
 
@@ -39,10 +46,10 @@ export const Projects = () => (
       <SectionHeading
         eyebrow="Projects"
         title={<>Selected <span className="text-gradient">Work</span></>}
-        description="Industry projects spanning press-tool assembly, inspection, casting NPD and CAD design."
+        description="AI-powered apps, full-stack platforms and freelance products built end-to-end."
       />
 
-      <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {projects.map((p, i) => {
           const Icon = p.icon;
           return (

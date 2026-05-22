@@ -3,10 +3,10 @@ import { Quote } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const testimonials = [
-  { name: "Shop Floor Lead", role: "Mahindra & Mahindra · Tool Room", text: "Ankit consistently showed strong attention to detail during press-tool assembly and was reliable on quality checks." },
-  { name: "NPD Engineer", role: "Kiswok Industries", text: "A quick learner who picked up casting fundamentals fast and contributed meaningfully during his InPlant training." },
-  { name: "Faculty", role: "Arka Jain University", text: "Disciplined and curious — Ankit balances theory with practical tool-room experience exceptionally well." },
-  { name: "Peer", role: "B.Tech Mechanical", text: "Always the go-to person for CAD doubts — great with SolidWorks and CATIA workflows." },
+  { name: "Project Mentor", role: "Tata Steel · Web Dev Internship", text: "Vikash delivered the QR Code Generator project ahead of schedule with clean, well-structured code." },
+  { name: "LPU Faculty", role: "Computer Science Department", text: "A consistent performer with a real passion for AI — his SmartRMS project showcased great engineering depth." },
+  { name: "Client", role: "WebVista Agency", text: "Vikash is responsive, creative and technically sharp. Our site's conversions improved noticeably after his work." },
+  { name: "Peer", role: "B.Tech CSE · LPU", text: "Go-to person for anything React, Node or AI — explains concepts patiently and ships fast." },
 ];
 
 export const Testimonials = () => (
@@ -15,7 +15,7 @@ export const Testimonials = () => (
       <SectionHeading
         eyebrow="Testimonials"
         title={<>What People <span className="text-gradient">Say</span></>}
-        description="Feedback from mentors, peers and shop-floor leads."
+        description="Feedback from mentors, faculty, clients and peers."
       />
       <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {testimonials.map((t, i) => (
