@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Award, Medal, Factory, GraduationCap } from "lucide-react";
+import { Award, Trophy, Bot, Code2 } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const items = [
-  { icon: Factory, title: "Tata Motors Internship", desc: "6-week summer internship at the DGM Engine Plant — Assembly Line." },
-  { icon: GraduationCap, title: "IDTR CNC Workshop", desc: "4-week internship in CNC Engineering Workshop (Production)." },
-  { icon: Award, title: "Heavy Manufacturing Specialization", desc: "Coursera specialization on heavy manufacturing processes." },
-  { icon: Medal, title: "TPM Management Programme", desc: "Management Development Programme on Total Productive Maintenance — IDTR." },
+  { icon: Trophy, title: "1st Runner-up · Game Dev Contest", desc: "Awarded 1st Runner-up in a Game Development Competition (Feb 2025)." },
+  { icon: Bot, title: "AI Product Builder", desc: "Designed and shipped multiple AI-powered apps including SmartRMS and Grosari-Wala." },
+  { icon: Code2, title: "Tata Steel Internship", desc: "Successfully delivered the Tata Steel QR Generator project during summer internship." },
+  { icon: Award, title: "Meta Certified Developer", desc: "Certified by Meta in Kotlin & Android app development fundamentals." },
 ];
 
 export const Achievements = () => (

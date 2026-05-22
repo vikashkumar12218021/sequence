@@ -68,13 +68,13 @@ export const ScrollyOverlay = ({ progress }: Props) => {
           A Scrollytelling Portfolio
         </div>
         <h1 className="font-display text-[2.75rem] leading-[0.95] sm:text-6xl md:text-8xl font-black mb-3 sm:mb-4">
-          Ankit Kumar <span className="text-gradient">Choudhary</span>
+          Vikash <span className="text-gradient">Kumar</span>
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-foreground/80 max-w-xl px-2">
-          Mechanical Engineer · Tool &amp; Die Specialist
+          AI Developer · Web &amp; App Developer · Content Creator
         </p>
         <p className="text-[11px] sm:text-xs md:text-sm font-mono text-muted-foreground mt-2">
-          Arka Jain University · Jamshedpur
+          Lovely Professional University · Punjab
         </p>
         <div className="absolute bottom-6 sm:bottom-10 flex flex-col items-center gap-2">
           <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
@@ -91,9 +91,9 @@ export const ScrollyOverlay = ({ progress }: Props) => {
       >
         <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-primary mb-5 sm:mb-6 animate-pulse" />
         <h2 className="font-display text-[2rem] sm:text-4xl md:text-7xl font-bold leading-[1.1] max-w-4xl">
-          Crafting <span className="text-gradient">Precision Tools</span>
+          Building <span className="text-gradient">AI-Powered</span>
           <br className="hidden sm:block" />
-          <span className="sm:hidden"> </span>with CAD &amp; Craftsmanship
+          <span className="sm:hidden"> </span>Web &amp; Mobile Products
         </h2>
       </motion.div>
 
@@ -110,9 +110,9 @@ export const ScrollyOverlay = ({ progress }: Props) => {
         </div>
         <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 md:gap-2 max-w-5xl w-full">
           {[
-            { t: "10th", s: "Xavier's English HS" },
-            { t: "Diploma", s: "Tool & Die · CTTC" },
-            { t: "B.Tech", s: "Mechanical · Arka Jain" },
+            { t: "School", s: "Science · Math" },
+            { t: "B.Tech", s: "CSE · LPU" },
+            { t: "7.15", s: "CGPA · 2022–26" },
           ].map((it, i) => (
             <div
               key={it.t}
@@ -142,15 +142,15 @@ export const ScrollyOverlay = ({ progress }: Props) => {
         <div className="flex items-center gap-2 mb-6 sm:mb-8">
           <Briefcase className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
           <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-primary text-center">
-            Industry × Academia
+            Work × Internships
           </span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 max-w-3xl w-full">
           {[
-            { r: "Diploma Trainee", o: "Mahindra & Mahindra · Tool & Die" },
-            { r: "InPlant Trainee — NPD", o: "Kiswok Industries" },
-            { r: "Engine Plant Intern", o: "Tata Motors · DGM" },
-            { r: "CNC Workshop Intern", o: "IDTR" },
+            { r: "Web Dev Intern", o: "Tata Steel · 2024" },
+            { r: "Freelance Full-Stack", o: "WebVista Agency" },
+            { r: "AI Developer", o: "SmartRMS · LPU" },
+            { r: "Content Creator", o: "Digital Media" },
           ].map((x) => (
             <div key={x.r} className="glass-card p-3.5 sm:p-4">
               <div className="font-display font-bold text-sm sm:text-base">
@@ -176,7 +176,7 @@ export const ScrollyOverlay = ({ progress }: Props) => {
           </span>
         </div>
         <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 md:gap-3 max-w-3xl">
-          {["AutoCAD", "SolidWorks", "CATIA V5/V6", "CNC Wire EDM", "Press Tools", "Mold Design", "Jigs & Fixtures", "Lathe", "Milling", "Grinding"].map(
+          {["React.js", "Node.js", "Express", "Django", "MongoDB", "MySQL", "C++", "JavaScript", "Python", "PHP", "AI Chatbots", "NLP"].map(
             (s, i) => (
               <motion.span
                 key={s}
@@ -192,20 +192,20 @@ export const ScrollyOverlay = ({ progress }: Props) => {
         </div>
       </motion.div>
 
-      {/* 6. RESEARCH */}
+      {/* 6. PROJECTS HIGHLIGHT */}
       <motion.div
         style={{ opacity: o5, y: y5 }}
         className="absolute inset-0 flex flex-col items-center justify-center text-center px-5 pt-20 sm:pt-16"
       >
         <FlaskConical className="w-7 h-7 sm:w-8 sm:h-8 text-primary mb-3 sm:mb-4 animate-pulse" />
         <div className="font-display text-[5rem] sm:text-7xl md:text-9xl font-black text-gradient leading-none">
-          2+
+          5+
         </div>
         <div className="font-mono text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.25em] sm:tracking-[0.3em] text-muted-foreground mt-2 mb-5 sm:mb-6">
-          Years of Industry Training
+          AI & Full-Stack Projects Shipped
         </div>
         <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 max-w-2xl">
-          {["Mahindra & Mahindra", "Tata Motors", "Kiswok Industries", "IDTR", "Coursera"].map(
+          {["SmartRMS", "Grosari-Wala", "HotelWilla", "SocialBoost", "WebVista"].map(
             (t) => (
               <span
                 key={t}

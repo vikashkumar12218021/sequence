@@ -1,30 +1,28 @@
 import { motion } from "framer-motion";
-import { Cog, Factory } from "lucide-react";
+import { Code2, Briefcase } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const items = [
   {
-    icon: Cog,
-    title: "Diploma Trainee Engineer — Tool Room",
-    org: "Mahindra & Mahindra Ltd · Tool & Die Plant 2",
-    sub: "Oct 2021 — Oct 2022",
+    icon: Code2,
+    title: "Web Development Intern",
+    org: "Tata Steel",
+    sub: "Jun 2024 — Aug 2024",
     points: [
-      "Assembly of press tools: draw, forming, blank & pierce, trim and progressive dies",
-      "Quality checking and inspection of die parts and sheet-metal components",
-      "Static & dynamic checking of sheet-metal components and dies",
-      "Inspection of sub-contracted die parts, trim-line passing and CAM alignment",
-      "Trim clearance verification and safe shop-floor practices",
+      "Built a static QR Code Generator website from the ground up",
+      "Integrated download functionality for contact and business QR codes",
+      "Focused on clean UI, responsive layout and zero-dependency performance",
     ],
   },
   {
-    icon: Factory,
-    title: "InPlant Trainee — New Product Development",
-    org: "Kiswok Industries Pvt. Ltd.",
-    sub: "Jan 2020 — Sep 2020",
+    icon: Briefcase,
+    title: "Founder & Full-Stack Developer — WebVista Agency",
+    org: "Freelance",
+    sub: "May 2023 — Present",
     points: [
-      "Worked with the NPD team on casting product development",
-      "Hands-on exposure to design and manufacturing of casting materials",
-      "Process documentation and inspection support for new components",
+      "Led full-stack web development for small businesses",
+      "Delivered responsive design, SEO and social media integrations",
+      "Provided AI-driven insights into customer behaviour on client websites",
     ],
   },
 ];
@@ -34,8 +32,8 @@ export const Experience = () => (
     <div className="container mx-auto px-4">
       <SectionHeading
         eyebrow="Experience"
-        title={<>Where <span className="text-gradient">Industry</span> meets <span className="text-gradient">Craft</span></>}
-        description="Real shop-floor experience across press-tool assembly and new product development."
+        title={<>Where <span className="text-gradient">Code</span> meets <span className="text-gradient">Impact</span></>}
+        description="Real-world internship and freelance work across web, AI and product development."
       />
 
       <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">

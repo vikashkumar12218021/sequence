@@ -49,10 +49,10 @@ export const Navbar = () => {
         >
           <a href="#home" className="flex items-center gap-2 group">
             <div className="w-9 h-9 rounded-xl bg-gradient-primary flex items-center justify-center font-display font-bold text-primary-foreground glow-primary">
-              AC
+              VK
             </div>
             <span className="font-display font-bold text-lg hidden sm:inline">
-              Ankit<span className="text-gradient">.</span>
+              Vikash<span className="text-gradient">.</span>
             </span>
           </a>
 

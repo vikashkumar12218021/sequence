@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { SectionHeading } from "../SectionHeading";
 import { Button } from "@/components/ui/button";
@@ -27,7 +27,7 @@ export const Contact = () => {
         <SectionHeading
           eyebrow="Contact"
           title={<>Let's <span className="text-gradient">Connect</span></>}
-          description="Open to opportunities in tool & die, design engineering and manufacturing roles."
+          description="Open to AI, full-stack web and mobile development opportunities."
         />
 
         <div className="grid lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
@@ -49,7 +49,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground font-mono uppercase">Email</div>
-                  <a href="mailto:ankitchoudhary2305@gmail.com" className="text-sm hover:text-primary transition-colors">ankitchoudhary2305@gmail.com</a>
+                  <a href="mailto:vk5march2003@gmail.com" className="text-sm hover:text-primary transition-colors">vk5march2003@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -58,8 +58,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground font-mono uppercase">Phone</div>
-                  <a href="tel:+918789319609" className="text-sm hover:text-primary transition-colors block">+91 8789319609</a>
-                  <a href="tel:+919204238028" className="text-sm hover:text-primary transition-colors block">+91 9204238028</a>
+                  <a href="tel:+919693880632" className="text-sm hover:text-primary transition-colors block">+91 9693880632</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -68,13 +67,16 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground font-mono uppercase">Location</div>
-                  <div className="text-sm">Jamshedpur, Jharkhand, India</div>
+                  <div className="text-sm">Lovely Professional University, Punjab</div>
                 </div>
               </div>
             </div>
             <div className="flex gap-3 mt-auto pt-4 relative">
-              <a href="https://www.linkedin.com/in/ankit-kumar-choudhary38238" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="w-11 h-11 rounded-xl glass flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all">
+              <a href="https://linkedin.com/in/vikash-05-03-kumar/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="w-11 h-11 rounded-xl glass flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all">
                 <Linkedin className="w-5 h-5 text-primary" />
+              </a>
+              <a href="https://github.com/vikashkumar12218021" target="_blank" rel="noreferrer" aria-label="GitHub" className="w-11 h-11 rounded-xl glass flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all">
+                <Github className="w-5 h-5 text-primary" />
               </a>
             </div>
           </motion.div>

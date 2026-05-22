@@ -3,23 +3,22 @@ import { BadgeCheck, Sparkles, Globe } from "lucide-react";
 import { SectionHeading } from "../SectionHeading";
 
 const certifications = [
-  "CNC Engineering Workshop — IDTR (Production)",
-  "Engine Plant Assembly Line — Tata Motors",
-  "Heavy Manufacturing Specialization — Coursera",
-  "TPM Management Development Programme — IDTR",
+  "Programming Fundamentals in Kotlin — Meta (Nov 2024)",
+  "Introduction to Android App Development — Meta (Oct 2024)",
+  "Programming in C++ — Codio (Nov 2023)",
+  "Programming in Java — NPTEL (Oct 2023)",
 ];
 
 const strengths = [
-  "Time management & dedication",
-  "Strong written & oral communication",
-  "Self-motivated, fast learner",
-  "Energetic & able to work independently",
+  "Problem solving & analytical thinking",
+  "Teamwork and collaboration",
+  "Project management & ownership",
+  "Adaptability across stacks (AI, web, mobile)",
 ];
 
 const languages = [
   { name: "English", level: "Fluent" },
   { name: "Hindi", level: "Native" },
-  { name: "Bengali", level: "Conversational" },
 ];
 
 const Card = ({
@@ -65,11 +64,11 @@ export const Credentials = () => (
       <SectionHeading
         eyebrow="Credentials"
         title={<>Certifications, Strengths & <span className="text-gradient">Languages</span></>}
-        description="Continuous learning across machines, processes and communication."
+        description="Continuous learning across AI, mobile, web and core programming."
       />
 
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <Card icon={BadgeCheck} title="Certifications & Training" items={certifications} delay={0} />
+        <Card icon={BadgeCheck} title="Certifications" items={certifications} delay={0} />
         <Card icon={Sparkles} title="Core Strengths" items={strengths} delay={0.1} />
         <Card
           icon={Globe}

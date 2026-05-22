@@ -2,18 +2,17 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "../SectionHeading";
 
 const skillGroups = [
-  { title: "CAD / CAM Software", items: ["AutoCAD (Mechanical)", "SolidWorks", "CATIA V5/V6"] },
-  { title: "Manufacturing", items: ["Press Tool", "Mold Design", "Jigs & Fixtures", "Die Assembly"] },
-  { title: "Conventional Machines", items: ["Lathe", "Milling", "Shaper", "Grinding", "Drilling"] },
-  { title: "CNC & Advanced", items: ["CNC Wire EDM", "CNC Production", "Sheet-Metal Inspection"] },
-  { title: "Quality & Process", items: ["Static & Dynamic Checking", "Trim-Line Passing", "CAM Alignment", "TPM"] },
-  { title: "Productivity", items: ["MS Office", "Documentation", "Shop-Floor Reporting"] },
+  { title: "Programming", items: ["C++", "JavaScript", "C", "PHP", "Python"] },
+  { title: "AI Development", items: ["AI Chatbots", "AI Assistants", "NLP", "Intent Recognition"] },
+  { title: "Web & App", items: ["React.js", "Node.js", "Express.js", "Django", "Mobile Apps"] },
+  { title: "Databases", items: ["MongoDB", "MySQL", "SQLite"] },
+  { title: "Design & Media", items: ["Web Design", "Graphic Design", "Video Production", "UI/UX"] },
+  { title: "Soft Skills", items: ["Problem Solving", "Teamwork", "Project Management", "Adaptability"] },
 ];
 
 const tools = [
-  "AutoCAD", "SolidWorks", "CATIA V5", "CATIA V6", "CNC Wire EDM",
-  "Lathe", "Milling", "Shaper", "Grinding", "Drilling",
-  "Press Tools", "Progressive Die", "MS Office",
+  "React.js", "Node.js", "Express.js", "Django", "MongoDB", "MySQL",
+  "Stripe API", "C++", "JavaScript", "Python", "PHP", "Kotlin", "Android",
 ];
 
 export const Skills = () => (
@@ -22,7 +21,7 @@ export const Skills = () => (
       <SectionHeading
         eyebrow="Skills & Stack"
         title={<>Technical <span className="text-gradient">Toolkit</span></>}
-        description="Software, machines and processes I design with and operate on the shop floor."
+        description="Languages, frameworks and AI tools I build with every day."
       />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
@@ -54,7 +53,7 @@ export const Skills = () => (
 
       <div className="mt-16 max-w-6xl mx-auto">
         <h3 className="font-display text-2xl font-bold text-center mb-8">
-          Machines & <span className="text-gradient">Tools</span>
+          Tools & <span className="text-gradient">Frameworks</span>
         </h3>
         <div className="flex flex-wrap justify-center gap-3">
           {tools.map((t, i) => (
